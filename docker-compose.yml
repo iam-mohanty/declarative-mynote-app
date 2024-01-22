@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-     image : urdevops/my-note-app:latest
+     image : amohanty13/my-note-app:latest
      ports :
          - "8000:8000"
