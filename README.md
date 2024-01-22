@@ -1,41 +1,15 @@
 # Simple Notes App👍
 This is a simple notes app built with React and Django.
 
-## Requirements
-1. Python 3.9
-2. Node.js
-3. React
-
-## Installation
-1. update ubuntu system
-```
-sudo apt-get update
-```
-
-2. install docker
-```
-sudo apt install docker.io -y
-```
-
-3. allow ubuntu user to run docker
-```
-sudo usermod -aG docker $USER
-```
-
-## Nginx
-
-Install Nginx reverse proxy to make this application available
-
-`sudo apt-get update`
-`sudo apt install nginx`
-
-
-
-# jenkins-nodeapp👇😎
-
 # 1. install ubuntu 
 
 create aws ubuntu-22 server , login as : ubuntu 
+
+sudo apt-get update 
+
+sudo apt install docker.io -y 
+
+sudo usermod -aG docker $USER
 
 sudo reboot , again login
 
@@ -45,14 +19,8 @@ sudo apt install openjdk-17-jre -y
 
 java --version
 
-sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
-  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
-  
-echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
-  /etc/apt/sources.list.d/jenkins.list > /dev/null
+go to jenkins.io -> copy & paste binary , key files
 
-  
 sudo apt-get update
 
 sudo apt-get install jenkins
@@ -65,7 +33,7 @@ create pipeline project
 
 mention anything inside description
 
-github projects : mention ur github repo ; https://github.com/iam-mohanty/docker-compose-jenkins-declarative-nodeapp.git
+github projects : mention ur github repo ; https://github.com/iam-mohanty/declarative-mynote-app.git
 
 add syntax in pipeline section (paste it from jenkinsfile) , build
 
