@@ -5,7 +5,7 @@ pipeline {
         stage("Clone Code"){
             steps {
                 echo "Cloning the code"
-                git url:"https://github.com/urdevops/declarative-mynote-app.git", branch: "master"
+                git url:"https://github.com/iam-mohanty/declarative-mynote-app.git", branch: "master"
             }
         }
         stage("Build"){
