@@ -7,19 +7,19 @@ This is a simple notes app built with React and Django.
 3. React
 
 ## Installation
-1. Clone the repository
+1. update ubuntu system
 ```
-git clone https://github.com/kloudskart/declarative-mynote-app.git
-```
-
-2. Build the app
-```
-docker build -t notes-app .
+sudo apt-get update
 ```
 
-3. Run the app
+2. install docker
 ```
-docker run -d -p 8000:8000 notes-app:latest
+sudo apt install docker.io -y
+```
+
+3. allow ubuntu user to run docker
+```
+sudo usermod -aG docker $USER
 ```
 
 ## Nginx
@@ -36,12 +36,6 @@ Install Nginx reverse proxy to make this application available
 # 1. install ubuntu 
 
 create aws ubuntu-22 server , login as : ubuntu 
-
-sudo apt-get update 
-
-sudo apt install docker.io -y 
-
-sudo usermod -aG docker $USER
 
 sudo reboot , again login
 
